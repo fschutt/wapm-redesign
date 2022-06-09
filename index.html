@@ -1,9 +1,161 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Wasmer Website Redesign</title>
+
+        <title>WAPM - WebAssembly Package and Deployment Management</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
+
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                line-height: 1.4;
+                font-family: 'Lato', sans-serif;
+            }
+            a {
+                color: inherit;
+            }
+            header {
+                height: 60px;
+                background: #231044;
+                padding: 20px;
+                padding-left: 200px;
+            }
+
+            header > #searchbar {
+                margin: 0px;
+                border-radius: 5px;
+                padding: 10px;
+                color: #8972ad;
+                background: #231044;
+                max-width: 600px;
+                border: 1px solid #8972ad;
+            }
+            
+            #section-1 {
+                background: #221044;
+                color: white;
+                padding-top: 30px;
+                padding-bottom: 200px;
+                display: flex;
+            }
+
+            #section-1 > * {
+                max-width: 600px;
+                min-width: 600px;
+                margin: 0 200px;
+                flex-grow:0;
+            }
+
+            #section-1 > .s2 {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 0;
+            }
+
+            #section-1 > .s2 > div {
+                display: block;
+                min-width:150px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+                margin: 0px 10px;
+                padding: 20px;
+            }
+
+            #section-1 > .s2 > div > p:first-child{
+                font-size: 30px;
+            }
+
+            #section-1 > .s1 > h1 {
+                margin-bottom: 20px;
+            }
+            
+            #section-2 {
+                position:relative;
+                padding-left: 200px;
+                top: -160px;
+                margin-bottom: 80px;
+            }
+
+            #section-2 > div {
+                max-width: 600px;
+                padding: 20px;
+                background: white;
+                border-radius: 4px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            #section-2 ul {
+                padding-left: 20px;
+                margin-top: 15px;
+            }
+            
+            #section-2 ul li {
+                font-family: sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Test</h1>
+        <header>
+            <div id="searchbar">
+                <p></p>Search Packages</p>
+            </div>
+        </header>
+        <section id="section-1">
+            <div class="s1">
+                <h2>Combine and deploy applications independent of framework or platform</h2>
+                <p>Using WebAssembly and the 
+                    <a href="https://wasmer.io">Wasmer Runtime</a>, 
+                    WAPM lets you build, deploy and manage sandboxed
+                    containerized applications in minutes instead of days.
+                </p>
+            </div>
+            <div class="s2">
+                <div>
+                    <p>25.478</p>
+                    <p>packages</p>
+                </div>
+                <div>
+                    <p>8.000+</p>
+                    <p>deployed apps</p>
+                </div>
+                <div>
+                    <p>3.000+</p>
+                    <p>users</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section-2">
+            <div>
+                <h3>Why WebAssembly?</h3>
+                <ul>
+                    <li>Completely sandboxed per-library filesystem: never worry about dependencies reading your secret keys</li>
+                    <li>Small and lightweight: Containers &gt; 1 MB large for deployment on mobile platforms</li>
+                    <li>Runtime-agnostic packaging and ABI: Using Java, but need a C# library? Just import it with WebAssembly!</li>
+                    <li>Single binary artifact: no more complicated container-internal network configuration</li>
+                    <li>WASM runs on all devices including the browser, independent of platform support</li>
+                    <li>Integrated package management for cross-language packages</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section-3">
+            <h3>The WAPM advantage</h3>
+            <ul>
+                <li>WAPM</li>
+                <li>Artifactory</li>
+                <li>Docker Hub</li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            if (window.location.protocol == "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                setTimeout("location.reload(true);", 5500);
+            }
+        </script>
     </body>
 </html>
